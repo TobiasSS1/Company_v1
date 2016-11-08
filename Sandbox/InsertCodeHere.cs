@@ -13,7 +13,7 @@ namespace Sandbox
             // Add you test of the Employee class and derived classes here
             Employee Anna = new Employee("Anna", 100000);
             Worker Jens = new Worker("Jens", 83000, "Politiker");
-            Jens.GetSalaryPerMonth();
+            Manager Lars = new Manager("Jens", 300000, 5, 12);
 
             // The LAST line of code should be ABOVE this line
         }
