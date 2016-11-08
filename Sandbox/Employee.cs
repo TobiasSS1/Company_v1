@@ -24,6 +24,7 @@ namespace Sandbox
 
         public virtual int GetSalaryPerMonth()
         {
+            
             return salaryPerMonth;
         }
     }

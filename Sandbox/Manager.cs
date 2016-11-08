@@ -10,11 +10,21 @@ namespace Sandbox
         private int Bonus;
         private int hoursworked;
 
-        public Manager(string navn, int salary, int Bonus, int hoursworked):base(navn, salary)
+        public Manager():base("Lars", 800)
         {
-            this.Bonus = Bonus;
-            this.hoursworked = hoursworked; 
-
+            this.Bonus = 2000;
+            this.hoursworked = 181; 
         }
+
+        public override int GetSalaryPerMonth()
+        {
+            if (hoursworked >= 180)
+            {
+                return base.GetSalaryPerMonth() + Bonus;
+            }
+
+            return base.GetSalaryPerMonth();
+        }
+
     }
 }
