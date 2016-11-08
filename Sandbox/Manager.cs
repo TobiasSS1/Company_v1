@@ -7,13 +7,13 @@ namespace Sandbox
 {
     class Manager:Employee
     {
-        private int Bonus;
+        protected int Bonus;
         private int hoursworked;
 
-        public Manager():base("Lars", 800)
+        public Manager(string navn, int Salary, int Bonus, int hoursworked):base(navn, Salary)
         {
-            this.Bonus = 2000;
-            this.hoursworked = 181; 
+            this.Bonus = Bonus;
+            this.hoursworked = hoursworked; 
         }
 
         public override int GetSalaryPerMonth()
